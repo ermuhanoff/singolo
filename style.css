@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Lato";
 
-  src: url("singolo/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  src: url("assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
 
   font-weight: normal;
 
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Lato-Bold";
 
-  src: url("singolo/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  src: url("assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
 
   font-weight: normal;
 
@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Lato-Light";
 
-  src: url("singolo/assets/fonts/Lato/Lato-Light.ttf") format("truetype");
+  src: url("assets/fonts/Lato/Lato-Light.ttf") format("truetype");
 
   font-weight: normal;
 
@@ -190,7 +190,7 @@ body {
   height: 34px;
   margin-bottom: 12px;
 
-  background-image: url("singolo/assets/images/chev.png");
+  background-image: url("assets/images/chev.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -313,22 +313,22 @@ body {
 }
 
 .pen:before {
-  background-image: url(singolo/assets/images/Pen.png);
+  background-image: url(assets/images/Pen.png);
 }
 .bulb:before {
-  background-image: url(singolo/assets/images/Bulb.png);
+  background-image: url(assets/images/Bulb.png);
 }
 .heart:before {
-  background-image: url(singolo/assets/images/Heart.png);
+  background-image: url(assets/images/Heart.png);
 }
 .phone:before {
-  background-image: url(singolo/assets/images/Phone.png);
+  background-image: url(assets/images/Phone.png);
 }
 .bubble:before {
-  background-image: url(singolo/assets/images/Bubble.png);
+  background-image: url(assets/images/Bubble.png);
 }
 .star:before {
-  background-image: url(singolo/assets/images/Star.png);
+  background-image: url(assets/images/Star.png);
 }
 
 /* Third section - portfolio */
@@ -477,19 +477,19 @@ body {
 }
 
 .facebook {
-  background-image: url(singolo/assets/images/facebook.png);
+  background-image: url(assets/images/facebook.png);
 }
 
 .twitter {
-  background-image: url(singolo/assets/images/twitter.png);
+  background-image: url(assets/images/twitter.png);
 }
 
 .google {
-  background-image: url(singolo/assets/images/google+.png);
+  background-image: url(assets/images/google+.png);
 }
 
 .linkedin {
-  background-image: url(singolo/assets/images/linkedin.png);
+  background-image: url(assets/images/linkedin.png);
 }
 
 .list__item:hover {
@@ -638,13 +638,13 @@ textarea {
 }
 
 .tel::before {
-  background-image: url(singolo/assets/images/contact-phone.png);
+  background-image: url(assets/images/contact-phone.png);
 }
 .email::before {
-  background-image: url(singolo/assets/images/contact-mail.png);
+  background-image: url(assets/images/contact-mail.png);
 }
 .address::before {
-  background-image: url(singolo/assets/images/contact-location.png);
+  background-image: url(assets/images/contact-location.png);
 }
 
 .menu-list {
