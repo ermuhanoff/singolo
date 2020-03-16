@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Singolo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/singolo/style.css" />
+    <link rel="stylesheet" href="singolo/style.css" />
   </head>
   <body>
     <header class="main header">
@@ -13,26 +13,39 @@
         <span class="asterisk">*</span>
       </div>
       <nav class="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-list__item home">HOME</li>
-          <li class="nav-list__item services">SERVICES</li>
-          <li class="nav-list__item portfolio_m">PORTFOLIO</li>
-          <li class="nav-list__item about">ABOUT</li>
-          <li class="nav-list__item contact">CONTACT</li>
+        <ul class="js-list nav-list">
+          <li class="nav-list__item home m-active" data-link="slider">HOME</li>
+          <li class="nav-list__item services" data-link="our-service">SERVICES</li>
+          <li class="nav-list__item portfolio_m" data-link="portfolio">PORTFOLIO</li>
+          <li class="nav-list__item about" data-link="about-us">ABOUT</li>
+          <li class="nav-list__item contact" data-link="get-a-quote">CONTACT</li>
         </ul>
       </nav>
     </header>
     <main>
         <section class="main slider">
             <div class="slider-content">
-                <img class="phone vertical" src="assets/images/iPhone Vertical.png" alt="iPhone Vertical" width="240"
-                    height="483" />
-                <img class="phone horizontal" src="assets/images/iPhone Horizontal.png" alt="iPhone Horizontal" width="484"
-                    height="240" />
+                <div class="slider-block">
+                   <div class="slider-block__item first target" index='0'>
+                        <img class="phone vertical" src="assets/images/iPhone Vertical.png" alt="iPhone Vertical" width="240" height="483" />
+                        <img class="phone horizontal" src="assets/images/iPhone Horizontal.png" alt="iPhone Horizontal" width="484"
+                            height="240" />
+                            <div class="btn v"></div>
+                            <div class="btn h"></div>
+                            <div class="screen v"></div>
+                            <div class="screen h"></div>
+                   </div>
+                    <div class="slider-block__item second" index='1'>
+                        <img class="phone vertical" src="assets/images/iPhone Vertical.png" alt="iPhone Vertical" width="240"
+                            height="483" />
+                        <img class="phone horizontal" src="assets/images/iPhone Horizontal.png" alt="iPhone Horizontal" width="484"
+                            height="240" />
+                    </div>
+                </div>
             </div>
             <div class="slider-arrows">
-                <div class="chev left"></div>
-                <div class="chev right"></div>
+                <div class="chev l"></div>
+                <div class="chev r"></div>
             </div>
         </section>
         <section class="main our-service">
@@ -109,49 +122,49 @@
                     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
                     lacinia odio sem nec elit.
                 </div>
-                <ul class="menu-list">
-                    <li class="list__item active">All</li>
-                    <li class="list__item">Web Design</li>
-                    <li class="list__item">Graphic Design</li>
-                    <li class="list__item">Artwork</li>
+                <ul class="js-list menu-list">
+                    <li class="list__item m-active" data-type='1'>All</li>
+                    <li class="list__item" data-type='2'>Web Design</li>
+                    <li class="list__item" data-type='3'>Graphic Design</li>
+                    <li class="list__item" data-type='4'>Artwork</li>
                 </ul>
             </div>
             <div class="content">
                 <div class="content__item">
-                    <img src="assets/images/Project8.png" alt="Project8" />
+                    <img src="assets/images/Project8.png" alt="Project1" index='1'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project5.png" alt="Project5" />
+                    <img src="assets/images/Project5.png" alt="Project2" index='2'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Layer 9.png" alt="Layer9" />
+                    <img src="assets/images/Layer 9.png" alt="Project3" index='3'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project1.png" alt="Project1" />
+                    <img src="assets/images/Project1.png" alt="Project4" index='4'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project7.png" alt="Project7" />
+                    <img src="assets/images/Project7.png" alt="Project5" index='5'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project4.png" alt="Project4" />
+                    <img src="assets/images/Project4.png" alt="Project6" index='6'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Layer 11.png" alt="Layer11" />
+                    <img src="assets/images/Layer 11.png" alt="Project7" index='7'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Layer 8.png" alt="Layer8" />
+                    <img src="assets/images/Layer 8.png" alt="Project8" index='8'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project6.png" alt="Project6" />
+                    <img src="assets/images/Project6.png" alt="Project9" index='9'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project3.png" alt="Project3" />
+                    <img src="assets/images/Project3.png" alt="Project10" index='10'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project2.png" alt="Project2" />
+                    <img src="assets/images/Project2.png" alt="Project11" index='11'/>
                 </div>
                 <div class="content__item">
-                    <img src="assets/images/Project.png" alt="Project" />
+                    <img src="assets/images/Project.png" alt="Project12" index='12'/>
                 </div>
             </div>
         </section>
@@ -241,13 +254,13 @@
             <div class="form">
                 <div class="form-content">
                     <form action="form-submit">
-                        <button class="b-submit" type="submit"></button>
                         <input class="input" type="text" name="name" id="input-name" placeholder="Name (Required)" required />
                         <input class="input" type="email" name="email" id="input-email" placeholder="Email (Required)"
                             required />
                         <input class="input" type="text" name="subject" placeholder="Subject" />
                         <textarea class="input" name="desc" id="input-desc" cols="30" rows="10"
-                            placeholder="Describe your project in detail..."></textarea>
+                            placeholder="Describe your project in detail..." maxlength='250'></textarea>
+                        <input class=" input b-submit" type="submit" value="Send">
                     </form>
                 </div>
                 <div class="form-info">
@@ -280,5 +293,6 @@
             </ul>
         </div>
     </footer>
+    <script src="singolo/index.js"></script>
   </body>
 </html>
