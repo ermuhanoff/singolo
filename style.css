@@ -836,6 +836,8 @@ textarea {
 }
 
 .window-content {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   margin-bottom: 95px;
   max-width: 500px;
@@ -849,6 +851,7 @@ textarea {
 }
 
 .window-hide {
+  align-self: flex-end;
   width: max-content;
   margin: 0;
   margin-top: 20px;
