@@ -52,8 +52,6 @@ window.onload = () => {
     let menu = e.currentTarget;
     let element = e.target;
 
-    console.log(menu, element);
-
     if (!element.closest("ul")) return;
 
     for (let e of menu.children) e.classList.remove("m-active");
@@ -65,7 +63,7 @@ window.onload = () => {
   let sliderControl = e => {
     let t = e.currentTarget;
     let c = e.target;
-    console.log(t, c);
+ 
     if (!c.classList.contains("chev")) return;
 
     if (t.isStarted) {
@@ -183,8 +181,6 @@ window.onload = () => {
   };
   let hideWindow = e => {
     let c = e.currentTarget;
-
-    console.log(c);
 
     c.closest(".window").remove();
   };
