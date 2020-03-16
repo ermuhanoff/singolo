@@ -41,7 +41,7 @@ window.onload = () => {
     //   clearInterval(a);
     // }, time + delay);
 
-    e.scrollIntoView();
+    window.scrollBy(0, e.getBoundingClientRect().top - 95);
   };
   let toLink = e => {
     let link = e.getAttribute("data-link");
