@@ -3,9 +3,11 @@ window.onload = () => {
     let start = performance.now();
 
     //linear timing function
+    
     let timing = t => t;
 
     //drawing function default
+    
     let draw = (s, p) => {
       s.styleObj[s.type] = p * s.newValue + s.prev + s.ed;
     };
