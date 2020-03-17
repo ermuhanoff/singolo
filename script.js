@@ -189,8 +189,8 @@ window.onload = () => {
           if (A == B) return 0;
         case "3":
         case "4":
-          A += Math.random() * (4 - 1) + 1;
-          B += Math.random() * (4 - 1) + 1;
+          A += Math.random() * (10 - 1) + 1;
+          B += Math.random() * (10 - 1) + 1;
           if (A > B) return 1;
           if (A < B) return -1;
           if (A == B) return 0;
