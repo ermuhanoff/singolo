@@ -433,6 +433,7 @@ main {
 
 .content {
   display: flex;
+  max-height: 621px;
 
   flex-wrap: wrap;
   overflow: hidden;
@@ -477,12 +478,14 @@ main {
   margin: 18px 0 14px 0;
 
   line-height: 10px;
+  text-overflow: ellipsis;
 }
 
 .info {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: -0.2px;
+  text-align: justify;
 }
 
 .social-list {
@@ -590,9 +593,8 @@ input {
 }
 textarea {
   height: 202px;
-  
-  font-family: "Lato";
 
+  font-family: "Lato";
   resize: none;
 }
 
@@ -600,7 +602,7 @@ textarea {
   width: 100%;
   margin-bottom: 16px;
   padding: 10px 14.5px;
-  
+
   color: #f0d8d9;
 
   background-color: #d6564f;
@@ -832,11 +834,13 @@ textarea {
   position: fixed;
   z-index: 2;
 
-  display: flex;
+  display: none;
   width: 1020px;
   height: 100vh;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
 }
 
 .window-content {
@@ -859,10 +863,10 @@ textarea {
   width: max-content;
   margin: 0;
   margin-top: 20px;
-  
-  color: #666d89;
 
   border: 1px solid #666d89;
+  color: #666d89;
+
   background-color: #f2f2f2;
   cursor: pointer;
 }
