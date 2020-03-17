@@ -333,11 +333,15 @@ main {
 
 .service-text__content {
   margin: 0;
+  height: 63px;
+  width: 218.42px;
 
   font-size: 12px;
   line-height: 21px;
   text-align: justify;
   hyphens: manual;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .pen:before {
@@ -475,9 +479,11 @@ main {
 }
 
 .name > h3 {
-  margin: 18px 0 14px 0;
+  width: 300px;
+  margin: 14px 0 14px 0;
 
-  line-height: 10px;
+  line-height: 16px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
